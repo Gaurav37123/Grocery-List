@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ALert Box -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Exo:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/f5350ad8da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grocery List</h1>
+    </header>
+    <form>
+      <input type="text" class="list-input soft" />
+      <button type="button" class="list-button soft">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select soft">
+        <select name="items" class="filter-items">
+          <option value="all">All</option>
+          <option value="completed">Checked</option>
+          <option value="uncompleted">Unchecked</option>
+        </select>
+      </div>
+    </form>
+    <div class="grocery-container">
+      <ul class="grocery-list"></ul>
+    </div>
+    <button class="clear soft"><i class="fas fa-broom"></i><br />Clear</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
